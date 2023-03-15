@@ -22,3 +22,13 @@ https://laravel.com/docs/9.x/migrations#columns
 artisan make:model Post -c -f -m
 
 
+artisan ide-helper:generate
+artisan ide-helper:models -W
+artisan ide-helper:eloquent
+
+
+composer require laravel/breeze --dev
+
+artisan migrate:fresh --seed
+artisan migrate:refresh --seed
+artisan migrate --seed
